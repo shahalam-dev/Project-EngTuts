@@ -1,0 +1,56 @@
+[
+  {
+    "id": "a1",
+    "name": "Alessandra",
+    "img": "https://randomuser.me/api/portraits/women/8.jpg",
+    "review": "Great teacher, has a lot of patience and empathy, as well as great method of teaching. He is helping me a lot to prepare for job interviews. Really great experience ! 👍"
+  },
+  {
+    "id": "a2",
+    "name": "Elena",
+    "img": "https://randomuser.me/api/portraits/men/72.jpg",
+    "review": "We spent fantastic time, I will book more classes with Shahalam"
+  },
+  {
+    "id": "a3",
+    "name": "Miguel",
+    "img": "https://randomuser.me/api/portraits/women/25.jpg",
+    "review": "Shahalam  is such a professional that I´d recommend having classes with him to everyone that is reaaly into English and culture."
+  },
+  {
+    "id": "a4",
+    "name": "Cameron Ferguson",
+    "img": "https://randomuser.me/api/portraits/men/10.jpg",
+    "review": "Lessons with Shahalam are so much fun. Love his way of teaching and making difficult things easier so that one can understand and remember everything. Now, I feel more confident and much better able to relocate and interact in society. I recommend him to everyone."
+  },
+  {
+    "id": "a5",
+    "name": "Ruby Mendoza",
+    "img": "https://randomuser.me/api/portraits/women/51.jpg",
+    "review": "My first lesson was very good. He listened to my reasons to learn English with all his attention and explained the path we will take to improve ."
+  },
+  {
+    "id": "a6",
+    "name": "Arron Gomez",
+    "img": "https://randomuser.me/api/portraits/men/22.jpg",
+    "review": "Shahalam is a very patient teacher with a great sense of humour. He is good at conversational teaching method & will spot your mistakes when you make them in a real life setting."
+  },
+  {
+    "id": "a7",
+    "name": "Todd Andrews",
+    "img": "https://randomuser.me/api/portraits/men/96.jpg",
+    "review": "Shahalam is a great teacher. I really like the lessons with him. One our is always too short. He had a big knowledge and always something to talk about."
+  },
+  {
+    "id": "a8",
+    "name": "Noelle Hicks",
+    "img": "https://randomuser.me/api/portraits/women/81.jpg",
+    "review": "Shahalam is a really nice teacher and we talk about many intersting topics together. He always correct me when I make any mistake during the talk which helps me to make huge progress."
+  },
+  {
+    "id": "a9",
+    "name": "Jayden Castillo",
+    "img": "https://randomuser.me/api/portraits/men/2.jpg",
+    "review": "Thanks Shahalam for your patience! Those barking dogs are crazy. If you are one of those who like to be corrected immediately, Shahalam is perfect. I was taking notes of what he corrected me and continued the conversation. He is an interesting person! He has a lot to tell you"
+  }
+]
