@@ -1,7 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import useFirebase from "../../hooks/useFirebase";
 
 const Nav = () => {
+  const { logOut } = useFirebase();
   return (
     <div className="row">
       <div className="col-md-12">
@@ -24,6 +26,9 @@ const Nav = () => {
           <NavLink to="/login" className="nav-link">
             Login
           </NavLink>
+          <button className="nav-link" onClick={logOut}>
+            Sign Out
+          </button>
         </nav>
       </div>
     </div>

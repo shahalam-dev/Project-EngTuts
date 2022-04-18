@@ -11,8 +11,9 @@ const ServiceCard = ({ data }) => {
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
+          <p className="mb-3 fs-3">Price: ${data.price}</p>
           <a href="dsf" className="btn btn-primary">
-            Go somewhere
+            Enroll now
           </a>
         </div>
       </div>

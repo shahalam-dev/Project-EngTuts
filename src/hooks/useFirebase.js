@@ -6,15 +6,21 @@ import {
   sendPasswordResetEmail,
   signInWithEmailAndPassword,
   signInWithPopup,
+  signOut,
   updateProfile,
 } from "firebase/auth";
 import { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import app from "../firebase.init";
 
 const useFirebase = () => {
   const [user, setUser] = useState({});
   const auth = getAuth(app);
   const googleProvider = new GoogleAuthProvider();
+
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
 
   const handleGoogleSignIn = () => {
     signInWithPopup(auth, googleProvider)
@@ -78,6 +84,9 @@ const useFirebase = () => {
         console.log(user);
         // ...
       })
+      .then(() => {
+        navigate(from, { replace: true });
+      })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
@@ -99,12 +108,25 @@ const useFirebase = () => {
       });
   };
 
+  const logOut = () => {
+    signOut(auth)
+      .then(() => {
+        // Sign-out successful.
+        console.log("Sign-out successful");
+        setUser({});
+      })
+      .catch((error) => {
+        // An error happened.
+      });
+  };
+
   return {
     handleGoogleSignIn,
     createUserWithEmail,
     handlePasswordReset,
     handleEmailSignIn,
     user,
+    logOut,
   };
 };
 

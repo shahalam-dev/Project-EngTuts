@@ -3,22 +3,21 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <h2 className="text-center mb-5 fs-1">About page</h2>
+      <h2 className="text-center mb-5 fs-1">About Me</h2>
       <div className="row justify-content-center">
         <div className="col-md-8">
           <p className="fs-4" style={{ lineHeight: "1.5", color: "#2d6a4f" }}>
-            Easy On The Eyes: Everything Looks Brilliant With The First
-            13.3"/15.6” Amoled Screen In A Galaxy Book; Enjoy Vibrant Viewing
-            While You Work Or School Inside Or In Direct Sunlight, And It
-            Lessens Eye Strain By Reducing Harmful Blue Light Lightest Galaxy
-            Book Laptop: Sleek, Ultrathin And Available In A Stylish, Dual Color
-            Design, Galaxy Book Pro Is The Lightest Laptop And Won’T Weigh You
-            Down Do It In A Flash: From Downloading Large Documents Fast To
-            Watching Streams With No Lag, And More — All With The New 11Th Gen
-            Core Processor That’S Intel Evo Certified, So It Works On A Premium
-            Platform; With 512 Gb Of Storage, You’Ll Have All The Space You Need
-            Long-Lasting Battery: Power Through Up To 20 Hours On A Full Battery
-            Then Recharge Quick With Our Super Small, Light Charger
+            Hi! I'm Shahalam Sharif. I am a tech enthusiast boy. I began my
+            journey in 2017 to become a self-taught web developer. I tried a lot
+            of things at different places to become a Web Developer such as
+            Udemy, YouTube, FreeCodeCapm, etc. Every time I field badly. Along
+            my journey, I realized one thing that is I need to follow a strict
+            routine because I was distracted easily. One day I found a video on
+            YouTube posted by Jankanr Mahbub Bhai. In that video, he launched a
+            course on the Programming Hero platform. I researched a bit and I
+            found that that is the course I was looking for. So I enrolled
+            immediately. Now I wish, I would become a Web Developer Inshaallah.
+            Finally!
           </p>
         </div>
       </div>
