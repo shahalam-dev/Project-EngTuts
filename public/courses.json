@@ -1,0 +1,44 @@
+[
+  {
+    "id": "a1",
+    "name": "Charlotte Diaz",
+    "img": "https://randomuser.me/api/portraits/women/8.jpg",
+    "review": "It us so lightweight! Love the fact that it was so easy to setup, and it can synchronize perfectly with my other Samsung devices. BTW, for me Samsung is the best brand in electronics, so I'm really pleased and happy with my purchase. Thank you! 👍",
+    "star": 4.5
+  },
+  {
+    "id": "a2",
+    "name": "Bryan Holmes",
+    "img": "https://randomuser.me/api/portraits/men/72.jpg",
+    "review": "Very good laptop overall, super thin and fast with great OLED screen. However, the battery life is only HALF of expected 15+ hours even with light workload. I've tried to remedy by changing a power plan and using a battery saver option to no avail. Will be returning for a refund.",
+    "star": 3.8
+  },
+  {
+    "id": "a3",
+    "name": "Amy Bradley",
+    "img": "https://randomuser.me/api/portraits/women/25.jpg",
+    "review": "Just got it today, to replace my last samsung that died after nearly 7 years. I have been using it for approx 4 hours for work. This one runs HOT. The loud fan, which sounds like an airplane taxiing to the terminal just after landing, stays on 90% of the time. The fan on my old samsung which was the same but the 2015 version, rarely came on and when it did, almost was unnoticeable because it was quiet. Its in the low 60s here today, house heater is off. Not sure why. Everything else seems to be ok so far. But that fan issue is very noticeable.",
+    "star": 4.2
+  },
+  {
+    "id": "a4",
+    "name": "Cameron Ferguson",
+    "img": "https://randomuser.me/api/portraits/men/10.jpg",
+    "review": "Just got it today, to replace my last samsung that died after nearly 7 years. I have been using it for approx 4 hours for work. This one runs HOT. The loud fan, which sounds like an airplane taxiing to the terminal just after landing, stays on 90% of the time. The fan on my old samsung which was the same but the 2015 version, rarely came on and when it did, almost was unnoticeable because it was quiet. Its in the low 60s here today, house heater is off. Not sure why. Everything else seems to be ok so far. But that fan issue is very noticeable.",
+    "star": 3.5
+  },
+  {
+    "id": "a5",
+    "name": "Ruby Mendoza",
+    "img": "https://randomuser.me/api/portraits/women/51.jpg",
+    "review": "So, plugged it in and did the many many updates. The whole left side from top to bottom row not space bar got hot and all the way over to the 6 key. It was plugged in when this happened just doing the setup. On the battery the y-under side gets warm and this was just surfing the web. It is really light, the screen is really nice. It is not a touch screen which doesn't bother me, but Windows 11 is geared more to the touch screen. The battery will not last 20 hours like they say in description. I just did 1 hour of surfing and I lost 25% of the battery just surfing. All in all it is a good laptop for now. We got it on sale so I grab it. I got the midnight blue, wanted the white, but white was listed as Chrome OS and I wanted Windows. I believe the laptop is worth it but we will test it more and try to update the review.",
+    "star": 4.3
+  },
+  {
+    "id": "a6",
+    "name": "Arron Gomez",
+    "img": "https://randomuser.me/api/portraits/men/22.jpg",
+    "review": "I was blown away by this computer, it is extremely thin, powerful (i7), and has a very bright and crisp screen. It put every other computer, including work computers, to shame in my house! My only complaint is the touch pad can be unwieldy and difficult to use in that you very much have to place your hand on it properly, not always an easy task, and you have to press quite hard to click.",
+    "star": 4.7
+  }
+]
