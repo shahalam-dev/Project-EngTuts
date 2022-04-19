@@ -1,40 +1,41 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 import useFirebase from "../../hooks/useFirebase";
+import SocialAuth from "../SocialAuth/SocialAuth";
 
 const RegisterUser = () => {
-  const { handleGoogleSignIn, createUserWithEmail } = useFirebase();
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const { createUserWithEmail, errorMsg } = useFirebase();
+  const nameInput = useRef();
+  const emailInput = useRef();
+  const passInput = useRef();
 
-  const handleNameInput = (e) => {
-    setName(e.target.value);
-  };
-
-  const handleEmailInput = (e) => {
-    setEmail(e.target.value);
-  };
-
-  const handlePasswordInput = (e) => {
-    setPassword(e.target.value);
-  };
-
-  const handleSubmit = (e) => {
+  const handleRegistrationForm = (e) => {
     e.preventDefault();
-    createUserWithEmail(name, email, password);
+    createUserWithEmail(
+      nameInput.current.value,
+      emailInput.current.value,
+      passInput.current.value
+    );
   };
   return (
     <div className="row justify-content-center">
-      <form onSubmit={handleSubmit} className="col-md-6">
+      <form onSubmit={handleRegistrationForm} className="col-md-6">
+        {errorMsg && (
+          <div className="alert alert-danger my-3" role="alert">
+            {errorMsg}
+          </div>
+        )}
+
         <div className="mb-3">
           <label htmlFor="name" className="form-label">
             Full Name
           </label>
           <input
-            onBlur={handleNameInput}
+            ref={nameInput}
             type="text"
             id="name"
             className="form-control"
+            required
           />
         </div>
         <div className="mb-3">
@@ -42,39 +43,42 @@ const RegisterUser = () => {
             Email Address
           </label>
           <input
-            onBlur={handleEmailInput}
+            ref={emailInput}
             type="email"
             id="email"
             className="form-control"
+            required
           />
         </div>
         <div className="mb-3">
           <label htmlFor="pass" className="form-label">
-            Email Address
+            Password
           </label>
           <input
-            onBlur={handlePasswordInput}
+            ref={passInput}
             type="password"
             id="pass"
             className="form-control"
+            required
           />
         </div>
 
-        <button type="submit" className="btn btn-primary">
-          Submit
+        <button type="submit" className="btn btn-outline-info btn-lg">
+          Create Your Account
         </button>
-        <hr />
-        <div className="mt-3">
-          <button onClick={handleGoogleSignIn} className="btn btn-info">
-            <img
-              src="https://i.ibb.co/2npfC61/google.png"
-              alt=""
-              className="mx-2"
-            />
-            Sign In with Google
-          </button>
-        </div>
+        <span className="px-3">
+          Already have an account?
+          <Link className="px-2" to="/login">
+            Login
+          </Link>
+        </span>
       </form>
+      <hr className="mt-5" />
+      <div className="d-flex justify-content-center">
+        <div className="mt-3">
+          <SocialAuth text={"Sign Up with Google"}></SocialAuth>
+        </div>
+      </div>
     </div>
   );
 };

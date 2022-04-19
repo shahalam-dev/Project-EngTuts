@@ -3,42 +3,48 @@
     "id": "a1",
     "name": "English Writing Course",
     "img": "https://i.ibb.co/gdwwDGd/1.png",
-    "description": "",
+    "duration": "50+ hr",
+    "instructor": "shahalam",
     "price": 159
   },
   {
     "id": "a2",
     "name": "English Spoken Course",
     "img": "https://i.ibb.co/FXX9fyQ/2.png",
-    "description": "",
+    "duration": "150+ hr",
+    "instructor": "shahalam",
     "price": 199
   },
   {
     "id": "a3",
     "name": "English Phonetics Course",
     "img": "https://i.ibb.co/G3TGTKC/3.png",
-    "description": "",
+    "duration": "30+ hr",
+    "instructor": "shahalam",
     "price": 99
   },
   {
     "id": "a4",
     "name": "English IELTS Course",
     "img": "https://i.ibb.co/xj15FKz/4.png",
-    "description": "",
+    "duration": "150+ hr",
+    "instructor": "shahalam",
     "price": 299
   },
   {
     "id": "a5",
     "name": "English TOEFL Course",
     "img": "https://i.ibb.co/0Yn0dDn/5.png",
-    "description": "",
+    "duration": "120+ hr",
+    "instructor": "shahalam",
     "price": 299
   },
   {
     "id": "a6",
     "name": "English SAT Course",
     "img": "https://i.ibb.co/YNSPmt0/6.png",
-    "description": "",
+    "duration": "90+ hr",
+    "instructor": "shahalam",
     "price": 199
   }
 ]

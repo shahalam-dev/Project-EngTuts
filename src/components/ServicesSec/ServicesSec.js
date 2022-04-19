@@ -1,8 +1,9 @@
 import React from "react";
-import useCourses from "../../hooks/useCourses";
+import { useCourses } from "../../contexts/CoursesContext";
 import ServiceCard from "../ServiceCard/ServiceCard";
 
 const ServicesSec = () => {
+  // const courses = useCourses();
   const courses = useCourses();
   return (
     <div className="row">

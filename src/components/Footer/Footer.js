@@ -7,7 +7,7 @@ const Footer = () => {
         className="text-center fixed-bottom d-block"
         style={{ backgroundColor: "#dbfcff", marginTop: "50px" }}
       >
-        <p className="py-2">Copyright © Reserved to Laptop Analyst.</p>
+        <p className="py-2">Copyright © Reserved to EngTuts.</p>
       </div>
     </>
   );

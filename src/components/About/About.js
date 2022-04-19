@@ -6,7 +6,7 @@ const About = () => {
       <h2 className="text-center mb-5 fs-1">About Me</h2>
       <div className="row justify-content-center">
         <div className="col-md-8">
-          <p className="fs-4" style={{ lineHeight: "1.5", color: "#2d6a4f" }}>
+          <p className="fs-4 lead">
             Hi! I'm Shahalam Sharif. I am a tech enthusiast boy. I began my
             journey in 2017 to become a self-taught web developer. I tried a lot
             of things at different places to become a Web Developer such as

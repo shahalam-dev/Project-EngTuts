@@ -1,34 +1,48 @@
 import React from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { NavLink } from "react-router-dom";
+import auth from "../../firebase.init";
 import useFirebase from "../../hooks/useFirebase";
 
 const Nav = () => {
   const { logOut } = useFirebase();
+  const [user] = useAuthState(auth);
   return (
     <div className="row">
       <div className="col-md-12">
         <nav className="nav nav-pills justify-content-center my-5">
-          <NavLink to="/" className="nav-link">
+          <NavLink to="/" className="btn btn-outline-info" type="button">
             Home
           </NavLink>
-          <NavLink to="/about" className="nav-link">
+          <NavLink to="/about" className="btn btn-outline-info" type="button">
             About
           </NavLink>
-          <NavLink to="/blogs" className="nav-link">
+          <NavLink to="/blogs" className="btn btn-outline-info" type="button">
             Blogs
           </NavLink>
-          <NavLink to="/order" className="nav-link">
-            Order
-          </NavLink>
-          <NavLink to="/register" className="nav-link">
-            Register
-          </NavLink>
-          <NavLink to="/login" className="nav-link">
-            Login
-          </NavLink>
-          <button className="nav-link" onClick={logOut}>
-            Sign Out
-          </button>
+          {!user && (
+            <NavLink
+              to="/register"
+              className="btn btn-outline-info"
+              type="button"
+            >
+              Register
+            </NavLink>
+          )}
+          {!user && (
+            <NavLink to="/login" className="btn btn-outline-info" type="button">
+              Login
+            </NavLink>
+          )}
+          {user && (
+            <button
+              className="btn btn-outline-info"
+              type="button"
+              onClick={logOut}
+            >
+              Sign Out
+            </button>
+          )}
         </nav>
       </div>
     </div>
